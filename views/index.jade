@@ -18,7 +18,10 @@ block content
   div.divider#div1
   div.about-section
     h1 About Me
-    p Hello, my name is Nathaniel Houlihan.  I am a software engineer, currently working as a CWEP contractor at Lockheed Martin.  I am a senior at the University of Central Florida, working toward my bachelor's degree in Computer Science.  I spend most of my time programming and working on personal projects.  I love technology, have a passion for innovation, and hope someday to change the future.
+    div.headshot
+      img(align='left' src='images/nate.jpg' style='width: 20%; height: 20%;')
+    div.text-right
+      p Hello, my name is Nathaniel Houlihan.  I am a software engineer, currently working as a CWEP contractor at Lockheed Martin.  I am a senior at the University of Central Florida, working toward my bachelor's degree in Computer Science.  I spend most of my time programming and working on personal projects.  I love technology, have a passion for innovation, and hope someday to change the future.
   div.divider#div2
   div.work-section
     h1 Work
@@ -33,9 +36,10 @@ block content
     form.contact-form
       div.container-contact
         div.left
-          input(type='text' placeholder='Name')
-          input(type='email' placeholder='Email Address')
-          input(type='subjet' placeholder='Subject')
+          input(type='text' placeholder='Name' style='width: 100%;')
+          input(type='email' placeholder='Email Address' style='width: 100%;')
+          input(type='subjet' placeholder='Subject' style='width: 100%;')
         div.right
-          textarea(type='message' placeholder='Message')
-        input(type='submit' value='Submit')
+          textarea(type='message' placeholder='Message' style='width: 100%; min-height: 60px;')
+      center
+        input(type='submit' value='Submit' style='width: 30%; border-radius: 10px;')

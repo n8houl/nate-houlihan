@@ -20,6 +20,7 @@ a {
 .divider {
   color: white;
   background-color: #272a2d;
+  height: 250px;
   text-align: center;
   padding: 50px 80px;
   text-align: justify; }
@@ -33,6 +34,34 @@ a {
   width: 48%; }
 
 .container-contact {
+  width: 100%; }
+
+.about-section {
+  padding-top: 20px;
+  padding-bottom: 20px;
+  background-color: white;
+  display: inline-block; }
+  .about-section .text-right {
+    padding-left: 20px;
+    padding-right: 80px;
+    float: right;
+    width: 70%;
+    height: 100%; }
+
+.container-contact {
+  display: block;
+  padding-top: 20px;
+  padding-bottom: 20px; }
+  .container-contact .left {
+    float: left;
+    width: 48%; }
+  .container-contact .right {
+    float: right;
+    width: 48%; }
+
+.submit-button {
+  padding-top: 10px;
+  padding-bottom: 10px;
   width: 100%; }
 
 /*# sourceMappingURL=style.css.map */
