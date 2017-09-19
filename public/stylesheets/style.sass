@@ -6,15 +6,28 @@
   background-repeat: no-repeat
   background-size: cover
 
-body
+html,body
   font: 14px "Lucida Grande", Helvetica, Arial, sans-serif
+  margin: 0px 0px 0px 0px
+  min-width: 100vw
 
 a
   color: #00B7FF
 
+#img-header
+  border-radius: 50px
+  width: 25%
+  height: 25%
+  padding: 5px 5px 5px 5px
+  box-shadow: inset 0px 0px 85px rgba(0, 0, 0, .75)
+  -webkit-box-shadow: inset 0px 0px 85px rgba(0, 0, 0, .75)
+  -moz-box-shadow: inset 0px 0px 85px rgba(0, 0, 0, .75)
+
+.spacer
+  height: 80px
+  width: 100vw
+
 .header
-  img
-    border-radius: 50%
   a
     color: white
     text-decoration: none
@@ -46,16 +59,14 @@ a
   width: 100%
   margin: 0px 0px 0px 0px
   background-color: white
-  border-radius: 10px
   display: inline-block
   min-height: 400px
-  p, h1
-    padding: 10px 10px 10px 10px
+  p
+    padding: 10px 20px 10px 20px
 
 .about-section
   width: 100%
   background-color: white
-  border-radius: 10px
   display: inline-block
   .text-right
     padding-left: 20px
@@ -63,10 +74,10 @@ a
     float: right
     width: 70%
     height: 100%
-  p, h1, img
-    padding: 10px 10px 10px 10px
+  p, img
+    padding: 10px 20px 10px 20px
 .container-contact
-  padding: 10px 10px 10px 10px
+  padding: 10px 20px 10px 15px
   display: block
   .left
     float: left
@@ -74,3 +85,14 @@ a
   .right
     float: right
     width: 48%
+.top-piece
+  background-color: rgb(62, 63, 66)
+  float: top
+  height: 100px
+  width: 100%
+  display: table
+  h1
+    color: white
+    display: table-cell
+    vertical-align: middle
+    padding: 20px 20px 20px 20px
