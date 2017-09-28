@@ -14,14 +14,14 @@ $('a[href*="#"]').click(function(event) {
         fontSize: '110px'
       });
     }
-    var $target = $(target);
-    $target.focus();
-    if($target.is(":focus")) {
-      return false;
-    } else {
-      $target.attr('tabindex', '-1');
-      $target.focus();
-    };
+//    var $target = $(target);
+//    $target.focus();
+//    if($target.is(":focus")) {
+//      return false;
+//    } else {
+//      $target.attr('tabindex', '-1');
+//      $target.focus();
+//    };
   });
 });
 
