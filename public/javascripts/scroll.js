@@ -4,13 +4,26 @@ $('a[href*="#"]').click(function(event) {
   $('html, body').animate({
     scrollTop: target.offset().top
   }, 1000, function() {
-    var $target = $(target);
-    $target.focus();
-    if($target.is(":focus")) {
-      return false;
+    if(window.scrollY > 50) {
+      $('#name').animate({
+        fontSize: '55px'
+      });
     } else {
-      $target.attr('tabindex', '-1');
-      $target.focus();
-    };
+      $('#name').animate({
+        fontSize: '110px'
+      });
+    }
   });
+});
+
+$(document).scroll(function () {
+  if(window.scrollY > 50) {
+    $('#name').stop().animate({
+      fontSize: '55px'
+    });
+  } else {
+    $('#name').stop().animate({
+      fontSize: '110px'
+    });
+  }
 });
