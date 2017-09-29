@@ -1,10 +1,11 @@
 extends layout
 
 block content
-  div.header
+  div.header#menu
     div.spacer
     center
-      h1#name Nate Houlihan
+      a(href='#top')
+        h1#name Nate Houlihan
       center
         img#sep(src='images/sep.png')
       center
@@ -21,7 +22,7 @@ block content
       center
         img#sep(src='images/sep.png')
   
-  div.spacer2
+  div.spacer2#top
   div.divider#div1
   div.about-section
     div.top-piece
@@ -49,21 +50,24 @@ block content
           center
             a(href='https://www.google.com') 
               div.back 
-                p Project1
+                h4 Project1
+                p This is project1, the first project in the list
         div.photo-container
           div.photo
             img.front(src='https://cdn.static-economist.com/sites/default/files/images/2015/09/blogs/economist-explains/code2.png')
           center
             a(href='https://www.google.com') 
               div.back 
-                p Project1
+                h4 Project2
+                p This is project2, the second project in the list
         div.photo-container
           div.photo
             img.front(src='https://cdn.static-economist.com/sites/default/files/images/2015/09/blogs/economist-explains/code2.png')
           center
             a(href='https://www.google.com') 
               div.back 
-                p Project1
+                h4 Project3
+                p This is project3, the third project in the list
   div.divider#div4
   div.contact-section
     div.top-piece
