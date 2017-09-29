@@ -12,32 +12,33 @@ block content
         ul.menu
             center
             li
-              a(href='#div1') About
+              a(href='#abt') About
             li
-              a(href='#div2') Work
+              a(href='#work') Work
             li
-              a(href='#div3') Personal
+              a(href='#personal') Personal
             li
-              a(href='#div4') Contact
+              a(href='#contact') Contact
       center
         img#sep(src='images/sep.png')
   
   div.spacer2#top
-  div.divider#div1
-  div.about-section
+  div.divider#abt
+  div.about-section#content
     div.top-piece
       h1 About Me
     div.headshot
       img(align='left' src='images/nate.jpg' style='width: 15%; height: 15%;')
     div.text-right
       p Hello, my name is Nathaniel Houlihan.  I am a software engineer, currently working as a CWEP contractor at Lockheed Martin.  I am a senior at the University of Central Florida, working toward my bachelor's degree in Computer Science.  I spend most of my time programming and working on personal projects.  I love technology, have a passion for innovation, and hope to work on something that will help people for years to come.
-  div.divider#div2
-  div.work-section
+  
+  div.divider-2#work
+  div.text-section#content
     div.top-piece
       h1 Work
     p Through the majority of my college career, I have worked as a contractor at Lockheed Martin.  During my employment, I have worked on two different projects, holding different roles.  These roles include programming for simulations, testing, support tool design, and constructing technical documentation.  This job has taught me a lot about the software design process, working in a professional setting, and the inner workings of the engineering sector.  I am truly grateful for the opportunity that I have been given.
-  div.divider#div3
-  div.text-section
+  div.divider#personal
+  div.text-section#content
     div.top-piece
       h1 Personal
     p In my free time, I enjoy many activities.  I love playing my guitar, making music, going to the gym and exercising, and attending UCF football games with my friends as often as I can.  I also very much enjoy working on personal coding projects in my free time.  Below is a selection of my personal projects, and all of my personal projects are hosted on my #[a(href='https://github.com/n8houl') Github page].  I began working on each of these projects in order to learn a specific technology or skill with which I was unfamiliar.  They have taught me a lot, and I thoroughly enjoyed each one.
@@ -68,8 +69,8 @@ block content
               div.back 
                 h4 Project3
                 p This is project3, the third project in the list
-  div.divider#div4
-  div.contact-section
+  div.divider#contact
+  div.contact-section#content
     div.top-piece
       h1 Contact Me
     form.contact-form
@@ -82,7 +83,7 @@ block content
           textarea(type='message' placeholder='Message' style='width: 100%; min-height: 60px;')
         center
           input(type='submit' value='Submit' style='width: 100%; border-radius: 10px;')
-  div.social-section
+  div.social-section#content
     center
       ul#social
         center
