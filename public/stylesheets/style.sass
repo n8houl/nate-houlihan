@@ -1,5 +1,5 @@
 .parallax
-  background-image: url("../images/bg.jpg")
+  background-image: url("../images/bg2.jpg")
   min-height: 500px
   background-attachment: fixed
   background-position: center
@@ -12,7 +12,6 @@ html,body
   font-family: 'Lato'
   margin: 0px 0px 0px 0px
   padding: 0px 0px 0px 0px
-  min-width: 100vw
 
 a
   color: #00B7FF
@@ -32,28 +31,32 @@ a
   color: white
   font-weight: 300
 
+#content
+  position: relative
+  z-index: 1000
+
 .spacer
   position: relative
   z-index: 0
   height: 80px
-  width: 100vw
+  width: 100%
 .spacer2
   height: 600px
-  width: 100vw
+  width: 100%
 
 .header
   position: fixed
+  width: 100%
   a
     font-family: 'Lato'
     padding: 10px 10px 10px 10px
     color: white
     text-decoration: none
-    z-index: 500
   color: white
 
 #menu
   position: fixed
-  z-index: 9999
+  z-index: 999
 
 .menu
   position: relative
@@ -64,13 +67,27 @@ a
     display: inline-block
     padding-left: 10px
     padding-right: 10px
+    a:hover
+      color: rgb(98, 100, 102)
+    a:click
+      color: white
 
 .divider
+  position: relative
+  z-index: -90000000000
   margin: 0px 0px 0px
   padding: 0px 0px 0px 0px
   color: white
   background-color: rgba(0, 0, 0, 0)
   height: 50vh
+  width: 100%
+
+.divider-2
+  position: relative
+  z-index: -9999999
+  background-color: rgba(0, 0, 0, 0)
+  height: 50vh
+  width: 100%
 
 .divlast
   margin: 0px 0px 0px
@@ -91,7 +108,7 @@ a
 
 .text-section
   position: relative
-  width: 100vw
+  width: 100%
   height: 50vh
   margin: 0px 0px 0px 0px
   padding: 0px 0px 0px 0px
@@ -103,7 +120,7 @@ a
 
 .about-section
   position: relative
-  width: 100vw
+  width: 100%
   height: 50vh
   background-color: white
   display: inline-block
@@ -113,14 +130,15 @@ a
     padding-left: 20px
     padding-right: 80px
     float: right
-    width: 60vw
-    height: 100vh
+    width: 60%
+    height: 100%
   p, img
     padding: 10px 20px 10px 20px
 
 .work-section
   position: relative
-  width: 100vw
+  z-index: 1000
+  width: 100%
   height: 50vh
   min-height: 50vh
   margin: 0px 0px 0px 0px
@@ -133,7 +151,8 @@ a
 
 .contact-section
   position: relative
-  width: 100vw
+  z-index: 2
+  width: 100%
   height: 30vh
   margin: 0px 0px 0px 0px
   padding: 0px 0px 0px 0px
@@ -152,9 +171,8 @@ a
 
 .social-section
   position: relative
-
   height: 10vh
-  width: 100vw
+  width: 100%
   display: inline-block
   margin: 0px 0px 0px 0px
   padding: 0px 0px 0px 0px
@@ -163,7 +181,7 @@ a
   background-color: rgb(62, 63, 66)
   float: top
   height: 100px
-  width: 100vw
+  width: 100%
   display: table
   margin: 0px 0px 0px 0px
   padding: 0px 0px 0px 0px
@@ -196,10 +214,10 @@ a
 .flexcontainer
   width: 100vh
   display: flex
-  perspective: 100vw
+  perspective: 100%
 
 .photo
-  padding: 10px 0px 10px 0px
+  padding: 20px 0px 20px 0px
   width: 300px
   height: 150px
   transform: rotateY(0deg)
@@ -207,6 +225,8 @@ a
     width: 300px
     height: 150px
 .photo-container
+  padding-left: 20px
+  padding-right: 20px
   transform-style: preserve-3d
   transition-property: transform
   transition-duration: 1s

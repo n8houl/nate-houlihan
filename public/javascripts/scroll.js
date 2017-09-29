@@ -1,7 +1,6 @@
 $('a[href*="#"]').click(function(event) {
   event.preventDefault();
   var target = $(this.hash);
-  $("#menu").css("z-index", "-999");
   $('html, body').animate({
     scrollTop: target.offset().top
   }, 1000, function() {
@@ -14,8 +13,6 @@ $('a[href*="#"]').click(function(event) {
         fontSize: '110px'
       });
     }
-    var menu = document.getElementById('menu');
-    $("#menu").css("z-index", "999");
   });
 });
 
