@@ -24,7 +24,7 @@ block content
   
   div.spacer2#top
   div.divider#abt
-  div.about-section#content
+  div.about-section.content
     div.top-piece
       h1 About Me
     div.headshot
@@ -32,13 +32,13 @@ block content
     div.text-right
       p Hello, my name is Nathaniel Houlihan.  I am a software engineer, currently working as a CWEP contractor at Lockheed Martin.  I am a senior at the University of Central Florida, working toward my bachelor's degree in Computer Science.  I spend most of my time programming and working on personal projects.  I love technology, have a passion for innovation, and hope to work on something that will help people for years to come.
   
-  div.divider-2#work
-  div.text-section#content
+  div.divider#work
+  div.text-section.content
     div.top-piece
       h1 Work
     p Through the majority of my college career, I have worked as a contractor at Lockheed Martin.  During my employment, I have worked on two different projects, holding different roles.  These roles include programming for simulations, testing, support tool design, and constructing technical documentation.  This job has taught me a lot about the software design process, working in a professional setting, and the inner workings of the engineering sector.  I am truly grateful for the opportunity that I have been given.
   div.divider#personal
-  div.text-section#content
+  div.text-section.content
     div.top-piece
       h1 Personal
     p In my free time, I enjoy many activities.  I love playing my guitar, making music, going to the gym and exercising, and attending UCF football games with my friends as often as I can.  I also very much enjoy working on personal coding projects in my free time.  Below is a selection of my personal projects, and all of my personal projects are hosted on my #[a(href='https://github.com/n8houl') Github page].  I began working on each of these projects in order to learn a specific technology or skill with which I was unfamiliar.  They have taught me a lot, and I thoroughly enjoyed each one.
@@ -48,32 +48,32 @@ block content
         div.project
           div.photo-container
             div.photo
-              img.front(src='https://cdn.static-economist.com/sites/default/files/images/2015/09/blogs/economist-explains/code2.png')
+              img.front(src='images/3d-engine.png')
             center
-              a(href='https://www.google.com') 
+              a(href='https://github.com/n8houl/3DGameEngine') 
                 div.back 
-                  h4 Project1
-                  p This is project1, the first project in the list
+                  h4 3D Graphics Engine
+                  p Scratch made engine using advanced shader techniques to simulate light and water.
         div.project
           div.photo-container
             div.photo
-              img.front(src='https://cdn.static-economist.com/sites/default/files/images/2015/09/blogs/economist-explains/code2.png')
+              img.front(src='images/java-ide.png')
             center
-              a(href='https://www.google.com') 
+              a(href='https://github.com/n8houl/jIDE') 
                 div.back 
-                  h4 Project2
-                  p This is project2, the second project in the list
+                  h4 IDE / Code Editor
+                  p Scratch made IDE written in java.  Builds, runs, and displays syntax highlighting.
         div.project
           div.photo-container
             div.photo
-              img.front(src='https://cdn.static-economist.com/sites/default/files/images/2015/09/blogs/economist-explains/code2.png')
+              img.front(src='images/personal-site.png')
             center
-              a(href='https://www.google.com') 
+              a(href='https://github.com/n8houl/nate-houlihan') 
                 div.back 
-                  h4 Project3
-                  p This is project3, the third project in the list
-  div.divider#contact
-  div.contact-section#content
+                  h4 Personal Website
+                  p My personal website, the one you're viewing right now!
+  div.divider-2#contact
+  div.contact-section.content
     div.top-piece
       h1 Contact Me
     form.contact-form
@@ -86,7 +86,7 @@ block content
           textarea(type='message' placeholder='Message' style='width: 100%; min-height: 60px;')
         center
           input(type='submit' value='Submit' style='width: 100%; border-radius: 10px;')
-  div.social-section#content
+  div.social-section.content
     center
       ul#social
         center
