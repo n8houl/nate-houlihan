@@ -16,6 +16,9 @@ html, body {
 a {
   color: #00B7FF; }
 
+.headshot {
+  padding: 30px 30px 30px 100px; }
+
 #img-header {
   border-radius: 50px;
   width: 25%;
@@ -130,7 +133,7 @@ a {
   margin: 0px 0px 0px 0px;
   padding: 0px 0px 0px 0px; }
   .about-section .text-right {
-    padding-left: 20px;
+    padding-left: 0px;
     padding-right: 80px;
     float: right;
     width: 60%;
