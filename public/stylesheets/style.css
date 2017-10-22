@@ -164,7 +164,7 @@ form {
   width: 100%; }
 
 input, textarea {
-  width: 459px;
+  width: 90%;
   height: 27px;
   background: #efefef;
   border: 1px solid #dedede;
@@ -182,17 +182,17 @@ textarea {
   resize: none; }
 
 .contact-right {
-  width: 48%;
+  width: 40%;
   height: 200px;
   padding-right: 20px;
   padding-top: 20px;
   float: right; }
 
 .contact-left {
-  width: 48%;
+  width: 40%;
   height: 200px;
   padding-top: 20px;
-  padding-left: 20px;
+  padding-left: 40px;
   float: left; }
 
 .contact-bottom {
@@ -221,7 +221,7 @@ input:hover, textarea:hover {
   z-index: 2;
   width: 100%;
   min-height: 30vh;
-  max-height: 50vh;
+  max-height: 60vh;
   margin: 0px 0px 0px 0px;
   padding: 0px 0px 0px 0px;
   background-color: white;
