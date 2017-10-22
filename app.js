@@ -5,6 +5,7 @@ var logger = require('morgan');
 var cookieParser = require('cookie-parser');
 var bodyParser = require('body-parser');
 var sassMiddleware = require('node-sass-middleware');
+var nodemailer = require('nodemailer');
 
 var index = require('./routes/index');
 var users = require('./routes/users');
@@ -31,6 +32,32 @@ app.use(express.static(path.join(__dirname, 'public')));
 
 app.use('/', index);
 app.use('/users', users);
+
+app.post('/', function(req, res) {
+  var mailOpts, smtpTrans;
+  smtpTrans = nodemailer.createTransport({
+    service: 'Gmail',
+    auth: {
+      user: "natehoul@gmail.com",
+      pass: "nah11796"
+    }
+  });
+
+  mailOpts = {
+    from: req.body.name + ' &lt;' + req.body.email + '&gt;',
+    to: 'natehoul@gmail.com',
+    subject: req.body.name + ' <' + req.body.email + '>',
+    text: req.body.message
+  };
+
+  smtpTrans.sendMail(mailOpts, function(error, response) {
+    if (error) {
+      res.render('index', {title: 'Nate Houlihan', msg: 'Error occured, message not sent.', err: true, page: 'index'})
+    } else {
+      res.render('index', {title: 'Nate Houlihan', msg: 'Message sent! Thanks!', err: false, page: 'index'})
+    }
+  });
+});
 
 // catch 404 and forward to error handler
 app.use(function(req, res, next) {

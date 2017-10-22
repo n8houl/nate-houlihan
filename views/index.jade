@@ -76,16 +76,20 @@ block content
   div.contact-section.content
     div.top-piece
       h1 Contact Me
-    form.contact-form
-      div.container-contact
-        div.left
-          input(type='text' placeholder='Name' style='width: 100%;')
-          input(type='email' placeholder='Email Address' style='width: 100%;')
-          input(type='subjet' placeholder='Subject' style='width: 100%;')
-        div.right
-          textarea(type='message' placeholder='Message' style='width: 100%; min-height: 60px;')
+    form(action = '/' method='post')
+      div.contact-left
+        label Name
+        input(name='name' placeholder='Enter your name')
+        
+        label Email
+        input(name='email' type='email' placeholder='you@example.com')
+      
+      div.contact-right
+        label Message
+        textarea(name='message' placeholder='Your message here')
+      div.contact-bottom
         center
-          input(type='submit' value='Submit' style='width: 100%; border-radius: 10px;')
+          input#submit(name='submit' type='submit' value='Submit')
   div.social-section.content
     center
       ul#social
