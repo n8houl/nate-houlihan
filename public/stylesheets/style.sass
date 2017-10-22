@@ -150,27 +150,79 @@ a
   p
     padding: 10px 20px 10px 20px
 
+label
+  display: block
+  margin-top: 20px
+  letter-spacing: 2px
+
+form
+  margin: 0 auto
+  width: 100%
+
+input, textarea
+  width: 459px
+  height: 27px
+  background: #efefef
+  border: 1px solid #dedede
+  padding: 10px
+  margin-top: 3px
+  font-size: 0.9em
+  color: #3a3a3a
+  -moz-border-radius: 5px
+  -webkit-border-radius: 5px
+  border-radius: 5px
+
+textarea
+  height: 120px
+  font-family: 'Lato'
+  resize: none
+
+.contact-right
+  //background-color: #0f0
+  width: 48%
+  height: 200px
+  padding-right: 20px
+  padding-top: 20px
+  float: right
+.contact-left
+  //background-color: #00f
+  width: 48%
+  height: 200px
+  padding-top: 20px
+  padding-left: 20px
+  float: left
+.contact-bottom
+  clear: both
+  //background-color: #f00
+  padding-bottom: 20px
+
+#submit
+  width: 127px
+  height: 38px
+  border: none
+  margin-top: 10px
+  cursor: pointer
+
+#submit:hover
+  background-color: #97d6ef
+  color: white
+
+input:focus, textarea:focus
+  border: 1px solid #97d6eb
+
+input:hover, textarea:hover
+  border: 1px solid #ccc
 
 .contact-section
   position: relative
   z-index: 2
   width: 100%
   min-height: 30vh
-  max-height: 100vh
+  max-height: 50vh
   margin: 0px 0px 0px 0px
   padding: 0px 0px 0px 0px
   background-color: white
   display: inline-block
-
-.container-contact
-  padding: 10px 20px 10px 15px
-  display: block
-  .left
-    float: left
-    width: 48%
-  .right
-    float: right
-    width: 48%
 
 .social-section
   position: relative
